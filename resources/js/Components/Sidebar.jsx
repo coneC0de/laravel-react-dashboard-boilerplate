@@ -18,10 +18,18 @@ import { Button } from "@/Components/ui/Button";
 import { cn } from "@/Utils/classNames";
 import ProfileControls from "./ProfileControls";
 
+//Logo imports
+import UsersLogo from "@/Pages/Users/UsersLogo";
+import ProjectsLogo from "@/Pages/Projects/ProjectsLogo";
+import TasksLogo from "@/Pages/Tasks/TasksLogo";
+
 const APP_NAME = import.meta.env.VITE_APP_NAME;
 
 const links = [
     { title: "Dashboard", routeName: "dashboard", icon: <LayoutDashboard /> },
+    { title: "Korisnici", routeName: "users.index", icon: <UsersLogo /> },
+    { title: "Projekti", routeName: "projects.index", icon: <ProjectsLogo /> },
+    { title: "Zadaci", routeName: "tasks.index", icon: <TasksLogo /> },
 ];
 
 export default function Sidebar({ open, auth }) {
