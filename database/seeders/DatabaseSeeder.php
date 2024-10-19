@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
             'firstname' => 'Demo',
             'lastname' => 'Demo',
             'email' => 'demo@demo.com',
-            'password' => \Illuminate\Support\Facades\Hash::make("password"),
+            'password' => \Illuminate\Support\Facades\Hash::make("123456"),
         ]);
     }
 }
